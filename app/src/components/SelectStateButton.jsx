@@ -18,10 +18,6 @@ export function SelectStateButton({ localPoint }) {
             ...baseStyles,
             height: 64,
             borderRadius: 8,
-            backgroundColor:
-              state.hasValue && localPoint === "partida"
-                ? "#0038FF"
-                : "white",
           }),
         }}
       />
