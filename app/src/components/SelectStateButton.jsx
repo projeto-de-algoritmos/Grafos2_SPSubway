@@ -1,14 +1,23 @@
 import Select from "react-select";
-import States from "../assets/states.json"
+import States from "../assets/states.json";
 
-export function SelectStateButton({ localPoint, onChange, departure, arrival }) {
+export function SelectStateButton({
+  localPoint,
+  onChange,
+  departure,
+  arrival,
+}) {
   const options = States;
 
   const customFilter = (state) => {
-    if (state.label !== departure.label && state.label !== arrival.label){
+    if (state && arrival && departure){
+      if (state.label !== departure.label && state.label !== arrival.label) {
+        return state;
+      }
+    }else{
       return state
     }
-  }
+  };
 
   return (
     <div>
@@ -25,11 +34,11 @@ export function SelectStateButton({ localPoint, onChange, departure, arrival }) 
           }),
           option: (baseStyles) => ({
             ...baseStyles,
-            backgroundColor: 'white',
+            backgroundColor: "white",
             color: "black",
             ":hover": {
-              backgroundColor: '#2395FF'
-            }  
+              backgroundColor: "#2395FF",
+            },
           }),
         }}
         onChange={onChange}
