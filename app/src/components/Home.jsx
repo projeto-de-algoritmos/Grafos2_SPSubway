@@ -33,7 +33,7 @@ export function Home() {
           Encontrar
         </button>
       </div>
-      <BrazilMap />
+      <BrazilMap departure={departure} arrival={arrival} />
     </div>
   );
 }
