@@ -1,0 +1,110 @@
+[
+  {
+    "acronym": "RO",
+    "label": "Rondônia"
+  },
+  {
+    "acronym": "AC",
+    "label": "Acre"
+  },
+  {
+    "acronym": "AM",
+    "label": "Amazonas"
+  },
+  {
+    "acronym": "RR",
+    "label": "Roraima"
+  },
+  {
+    "acronym": "PA",
+    "label": "Pará"
+  },
+  {
+    "acronym": "AP",
+    "label": "Amapá"
+  },
+  {
+    "acronym": "TO",
+    "label": "Tocantins"
+  },
+  {
+    "acronym": "MA",
+    "label": "Maranhão"
+  },
+  {
+    "acronym": "PI",
+    "label": "Piauí"
+  },
+  {
+    "acronym": "CE",
+    "label": "Ceará"
+  },
+  {
+    "acronym": "RN",
+    "label": "Rio Grande do Norte"
+  },
+  {
+    "acronym": "PB",
+    "label": "Paraíba"
+  },
+  {
+    "acronym": "PE",
+    "label": "Pernambuco"
+  },
+  {
+    "acronym": "AL",
+    "label": "Alagoas"
+  },
+  {
+    "acronym": "SE",
+    "label": "Sergipe"
+  },
+  {
+    "acronym": "BA",
+    "label": "Bahia"
+  },
+  {
+    "acronym": "MG",
+    "label": "Minas Gerais"
+  },
+  {
+    "acronym": "ES",
+    "label": "Espírito Santo"
+  },
+  {
+    "acronym": "RJ",
+    "label": "Rio de Janeiro"
+  },
+  {
+    "acronym": "SP",
+    "label": "São Paulo"
+  },
+  {
+    "acronym": "PR",
+    "label": "Paraná"
+  },
+  {
+    "acronym": "SC",
+    "label": "Santa Catarina"
+  },
+  {
+    "acronym": "RS",
+    "label": "Rio Grande do Sul"
+  },
+  {
+    "acronym": "MS",
+    "label": "Mato Grosso do Sul"
+  },
+  {
+    "acronym": "MT",
+    "label": "Mato Grosso"
+  },
+  {
+    "acronym": "GO",
+    "label": "Goiás"
+  },
+  {
+    "acronym": "DF",
+    "label": "Distrito Federal"
+  }
+]
