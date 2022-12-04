@@ -10,7 +10,7 @@ export function SelectStateButton({
   const options = States;
 
   const customFilter = (state) => {
-    if (state && arrival && departure){
+    if (state && departure){
       if (state.label !== departure.label && state.label !== arrival.label) {
         return state;
       }
