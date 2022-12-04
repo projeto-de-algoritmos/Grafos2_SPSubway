@@ -1,110 +1,110 @@
 [
   {
-    "acronym": "RO",
+    "id": "RO",
     "label": "Rondônia"
   },
   {
-    "acronym": "AC",
+    "id": "AC",
     "label": "Acre"
   },
   {
-    "acronym": "AM",
+    "id": "AM",
     "label": "Amazonas"
   },
   {
-    "acronym": "RR",
+    "id": "RR",
     "label": "Roraima"
   },
   {
-    "acronym": "PA",
+    "id": "PA",
     "label": "Pará"
   },
   {
-    "acronym": "AP",
+    "id": "AP",
     "label": "Amapá"
   },
   {
-    "acronym": "TO",
+    "id": "TO",
     "label": "Tocantins"
   },
   {
-    "acronym": "MA",
+    "id": "MA",
     "label": "Maranhão"
   },
   {
-    "acronym": "PI",
+    "id": "PI",
     "label": "Piauí"
   },
   {
-    "acronym": "CE",
+    "id": "CE",
     "label": "Ceará"
   },
   {
-    "acronym": "RN",
+    "id": "RN",
     "label": "Rio Grande do Norte"
   },
   {
-    "acronym": "PB",
+    "id": "PB",
     "label": "Paraíba"
   },
   {
-    "acronym": "PE",
+    "id": "PE",
     "label": "Pernambuco"
   },
   {
-    "acronym": "AL",
+    "id": "AL",
     "label": "Alagoas"
   },
   {
-    "acronym": "SE",
+    "id": "SE",
     "label": "Sergipe"
   },
   {
-    "acronym": "BA",
+    "id": "BA",
     "label": "Bahia"
   },
   {
-    "acronym": "MG",
+    "id": "MG",
     "label": "Minas Gerais"
   },
   {
-    "acronym": "ES",
+    "id": "ES",
     "label": "Espírito Santo"
   },
   {
-    "acronym": "RJ",
+    "id": "RJ",
     "label": "Rio de Janeiro"
   },
   {
-    "acronym": "SP",
+    "id": "SP",
     "label": "São Paulo"
   },
   {
-    "acronym": "PR",
+    "id": "PR",
     "label": "Paraná"
   },
   {
-    "acronym": "SC",
+    "id": "SC",
     "label": "Santa Catarina"
   },
   {
-    "acronym": "RS",
+    "id": "RS",
     "label": "Rio Grande do Sul"
   },
   {
-    "acronym": "MS",
+    "id": "MS",
     "label": "Mato Grosso do Sul"
   },
   {
-    "acronym": "MT",
+    "id": "MT",
     "label": "Mato Grosso"
   },
   {
-    "acronym": "GO",
+    "id": "GO",
     "label": "Goiás"
   },
   {
-    "acronym": "DF",
+    "id": "DF",
     "label": "Distrito Federal"
   }
 ]

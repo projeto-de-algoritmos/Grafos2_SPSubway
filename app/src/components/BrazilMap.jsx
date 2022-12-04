@@ -1,5 +1,7 @@
 import BrasilMap from "../assets/brasil_map.png";
+import Xarrow from "react-xarrows";
 import States from "../assets/states.json";
+import { defLines } from "../utils/lineConnection";
 
 export function BrazilMap({ departure, arrival }) {
   const statesLocation = [
@@ -44,7 +46,7 @@ export function BrazilMap({ departure, arrival }) {
       right: "1%",
     },
     {
-      bottom: "23rem",
+      bottom: "23.1rem",
       right: "-8%",
     },
     {
@@ -116,23 +118,31 @@ export function BrazilMap({ departure, arrival }) {
   return (
     <div className="w-[80%] h-full max-h-[95%] bg-[#2395FF] rounded-3xl flex overflow-hidden justify-center items-center">
       <div className="w-full max-w-xl absolute h-full max-h-[38rem]">
+        {defLines.map((line, index) => (
+          <Xarrow key={index} {...line} />
+        ))}
         {States.map((state, index) => {
           return (
             <div
+              id={state.id}
               key={index}
-              className={`absolute m-10 w-6 h-6 border border-gray-400  bg-white rounded-full flex drop-shadow-lg
+              className={`absolute m-10 w-6 h-6 bg-white rounded-full flex drop-shadow-lg
                justify-center items-center ${
-                 departure && state.acronym === departure.acronym
-                   ? "bg-red-400"
+                 departure && state.id === departure.id
+                   ? "bg-red-300"
                    : ""
-               } ${arrival && state.acronym === arrival.acronym ? "bg-green-400" : ""}`}
+               } ${
+                arrival && state.id === arrival.id
+                  ? "bg-green-300"
+                  : ""
+              }`}
               style={{
                 bottom: statesLocation[index].bottom,
                 right: statesLocation[index].right,
                 transform: "translate(-50%, -50%)",
               }}
             >
-              <p className="text-xs">{state.acronym}</p>
+              <p className="text-xs">{state.id}</p>
             </div>
           );
         })}
