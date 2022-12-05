@@ -213,17 +213,4 @@ const lines = [
   },
 ];
 
-let defLines = [];
-
-lines.map((line) =>
-  defLines.push({
-    ...line,
-    color: "blue",
-    headSize: 0,
-    strokeWidth: 2,
-    curveness: 0.2,
-    animateDrawing: 2,
-  })
-);
-
-export { defLines };
+export { lines };

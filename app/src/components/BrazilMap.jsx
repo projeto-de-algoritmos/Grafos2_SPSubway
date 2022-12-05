@@ -1,9 +1,11 @@
 import BrasilMap from "../assets/brasil_map.png";
 import Xarrow from "react-xarrows";
 import States from "../assets/states.json";
-import { defLines } from "../utils/lineConnection";
+import { lines } from "../utils/lineConnection";
+import { useEffect } from "react";
+import { useState } from "react";
 
-export function BrazilMap({ departure, arrival }) {
+export function BrazilMap({ departure, arrival, shortestPathResult }) {
   const statesLocation = [
     {
       bottom: "18.5rem",
@@ -114,12 +116,41 @@ export function BrazilMap({ departure, arrival }) {
       right: "24%",
     },
   ];
+  const [defLines, setDefLines] = useState([]);
+
+  useEffect(() => {
+    const complete_lines = [];
+
+    lines.forEach((line) => {
+      let color = shortestPathResult ? 'transparent' : 'grey';
+      for (var i = 0; i < shortestPathResult?.path.length - 1; i++) {
+        if (
+          (shortestPathResult?.path[i] === line.start &&
+            shortestPathResult?.path[i + 1] === line.end) ||
+          (shortestPathResult?.path[i] === line.end &&
+            shortestPathResult?.path[i + 1] === line.start)
+        ) {
+          color = "blue";
+          break;
+        }
+      }
+      complete_lines.push({
+        ...line,
+        color: color,
+        headSize: 0,
+        strokeWidth: 2,
+        curveness: 0.2,
+        animateDrawing: 2,
+      });
+    });
+    setDefLines(complete_lines);
+  }, [shortestPathResult]);
 
   return (
     <div className="w-[80%] h-full max-h-[95%] bg-[#2395FF] rounded-3xl flex overflow-hidden justify-center items-center">
       <div className="w-full max-w-xl absolute h-full max-h-[38rem]">
         {defLines.map((line, index) => (
-          <Xarrow key={index} {...line} />
+          <Xarrow key={shortestPathResult ? index : index + "result"} {...line} />
         ))}
         {States.map((state, index) => {
           return (
@@ -128,14 +159,9 @@ export function BrazilMap({ departure, arrival }) {
               key={index}
               className={`absolute m-10 w-6 h-6 bg-white rounded-full flex drop-shadow-lg
                justify-center items-center ${
-                 departure && state.id === departure.id
-                   ? "bg-red-300"
-                   : ""
-               } ${
-                arrival && state.id === arrival.id
-                  ? "bg-green-300"
-                  : ""
-              }`}
+                 departure && state.id === departure.id ? "bg-red-300" : ""
+               } ${arrival && state.id === arrival.id ? "bg-green-300" : ""}
+               ${shortestPathResult?.path.includes(state.id) && 'bg-[#223CF1] text-white font-bold'}`}
               style={{
                 bottom: statesLocation[index].bottom,
                 right: statesLocation[index].right,
