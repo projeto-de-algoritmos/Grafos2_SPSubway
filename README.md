@@ -1,4 +1,4 @@
-# Explorando o Metro de São Paulo
+# Explorando os estados do Brasil
 
 **Número da Lista**: 2<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
