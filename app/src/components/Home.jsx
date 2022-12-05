@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { findingShortestPathDijkstrasAlgorithm } from "../utils/findingShortestPathDijkstrasAlgorithm";
 import { BrazilMap } from "./BrazilMap";
 import { SelectStateButton } from "./SelectStateButton";
 
 export function Home() {
   const [departure, setDeparture] = useState("");
   const [arrival, setArrival] = useState("");
+  const [shortestPathResult, setShortestPathResult] = useState();
 
   return (
     <div className="w-full h-screen flex items-center">
@@ -27,13 +29,14 @@ export function Home() {
           arrival={arrival}
         />
         <button
-          className="w-full bg-green-500 h-[64px] rounded-lg text-white font-bold hover:bg-green-600 transition-colors disabled:bg-gray-400"
+          className="w-full bg-green-500 h-[64px] rounded-lg text-white font-bold hover:bg-green-600 transition-colors disabled:bg-gray-400 relative"
           disabled={!departure || !arrival}
+          onClick={() => setShortestPathResult(findingShortestPathDijkstrasAlgorithm(departure.id, arrival.id))}
         >
           Encontrar
         </button>
       </div>
-      <BrazilMap departure={departure} arrival={arrival} />
+      <BrazilMap departure={departure} arrival={arrival} shortestPathResult={shortestPathResult}/>
     </div>
   );
 }
