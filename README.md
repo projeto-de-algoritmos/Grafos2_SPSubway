@@ -10,13 +10,13 @@
 | 19/0037806  |  Samuel Furtado Ávila |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Nesse projeto, utilizamos o algoritmo de Dijkstras para calcular quais seria o caminho mais curto entre um estado e outro. Por exemplo: qual é o caminho mais curto de Brasília até o Rio Grande do Norte? A distância entre um estado e outro é calculada baseada em uma rota através de rodovias, considerando que o principal meio de transporte para a viagem seria o carro. Além disso, o algoritmo utiliza como base a distância entre as capitais de cada estado.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
+**Linguagem**: Javascript<br>
 **Framework**: (caso exista)<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
