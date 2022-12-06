@@ -17,11 +17,28 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
 **Linguagem**: Javascript<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Framework**: React JS<br>
+Para rodar o projeto você precisará instalar na sua máquina:
+- [Node.js](https://nodejs.org/en/)
+
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Para rodar o projeto basta executar os seguintes comandos:
+
+Entrar na pasta app
+````
+cd ./app/
+````
+
+Instalar as dependências do projeto
+````
+npm install
+````
+
+Rodar projeto
+````
+npm start
+````
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
