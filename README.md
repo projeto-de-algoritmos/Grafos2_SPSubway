@@ -1,5 +1,6 @@
 # Explorando os estados do Brasil
 
+**Dupla**: 11<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
 
 ## Alunos
@@ -46,9 +47,8 @@ Rodar projeto
 npm start
 ````
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+## Apresentação 
 
-
+https://user-images.githubusercontent.com/53478066/205785530-e840ff39-243b-48b8-af82-b36a140de707.mp4
 
 
